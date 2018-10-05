@@ -2,13 +2,13 @@
 
 package bayes
 
-// Bayes factor against independence for a two-way contingency table assuming 
+// Bayes factor against independence for a two-way contingency table assuming
 // a "close to independence" alternative model.
 // Ref.: Albert (2009): 200 [bfindep()]
 
 import (
-	"code.google.com/p/probab/dst"
 	"fmt"
+	"github.com/tokenme/probab/dst"
 )
 
 // rdirichlet simulates a sample from a Dirichlet distribution.
@@ -44,7 +44,7 @@ func ldirichlet(a [][]float64) []float64 {
 	return v
 }
 
-// FactCTableIndep returns a Bayes factor against independence for a two-way contingency table assuming a 
+// FactCTableIndep returns a Bayes factor against independence for a two-way contingency table assuming a
 // "close to independence" alternative model.
 func FactCTableIndep(y [][]float64, k float64, m int) (bf, nse float64) {
 	// Arguments:
@@ -63,7 +63,7 @@ func FactCTableIndep(y [][]float64, k float64, m int) (bf, nse float64) {
 		n += val
 	}
 
-	//d=dim(y); 
+	//d=dim(y);
 	yRows := len(y)
 	yCols := len(y[0])
 

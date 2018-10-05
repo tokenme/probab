@@ -3,9 +3,9 @@
 package bayes
 
 import (
-	"code.google.com/p/probab/dst"
 	"fmt"
 	mx "github.com/skelterjohn/go.matrix"
+	"github.com/tokenme/probab/dst"
 )
 
 type KnownVarianceLRPosterior struct {

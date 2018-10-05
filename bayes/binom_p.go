@@ -6,8 +6,8 @@ package bayes
 // Bolstad 2007 (2e): Chapter 8, p. 141 and further.
 
 import (
-	"code.google.com/p/probab/dst"
 	"fmt"
+	"github.com/tokenme/probab/dst"
 	"math"
 )
 
@@ -255,7 +255,7 @@ func BinomPiLike(pi float64, n, k int64) float64 {
 	return math.Pow(pi, float64(k)) * math.Pow(1-pi, float64(n-k))
 }
 
-// BinomPiDeviance returns the Deviance of the Binomial proportion. 
+// BinomPiDeviance returns the Deviance of the Binomial proportion.
 func BinomPiDeviance(pi float64, n, k int64) float64 {
 	return -2 * math.Log(BinomPiLike(pi, n, k))
 }

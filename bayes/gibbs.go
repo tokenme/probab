@@ -3,14 +3,14 @@
 package bayes
 
 import (
-	"code.google.com/p/probab/dst"
+	"github.com/tokenme/probab/dst"
 	"math/rand"
 )
 
 /*
 
 gibbs=function(logpost,start,m,scale,...)
-{ 
+{
 p=length(start)
 vth=array(0,dim=c(m,p))
 f0=logpost(start,...)
@@ -27,7 +27,7 @@ for (i in 1:m)
   u=runif(1)<exp(f1-f0)
   th0[j]=th1[j]*(u==1)+th0[j]*(u==0)
   f0=f1*(u==1)+f0*(u==0)
-  vth[i,j]=th0[j]; 
+  vth[i,j]=th0[j];
   arate[j]=arate[j]+u
   }
 }

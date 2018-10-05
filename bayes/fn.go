@@ -3,7 +3,7 @@
 package bayes
 
 import (
-	fn "code.google.com/p/go-fn/fn"
+	fn "github.com/tokenme/go-fn/fn"
 	"math"
 )
 
@@ -11,7 +11,7 @@ const π = float64(math.Pi)
 const ln2 = math.Ln2
 const lnSqrt2π = 0.918938533204672741780329736406 // log(sqrt(2*pi))
 const min64 = math.SmallestNonzeroFloat64         //   DBL_MIN
-const eps64 = 1.1102230246251565e-16              // DBL_EPSILON   
+const eps64 = 1.1102230246251565e-16              // DBL_EPSILON
 const maxExp = 1024.0                             // DBL_MAX_EXP
 const sqrt2 = math.Sqrt2
 

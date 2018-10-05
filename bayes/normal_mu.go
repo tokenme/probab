@@ -4,12 +4,12 @@
 package bayes
 
 import (
-	. "code.google.com/p/probab/dst"
 	"fmt"
+	. "github.com/tokenme/probab/dst"
 	"math"
 )
 
-// PMF of the posterior distribution of unknown Normal μ, with KNOWN σ, and discrete prior, for single observation. 
+// PMF of the posterior distribution of unknown Normal μ, with KNOWN σ, and discrete prior, for single observation.
 // Bolstad 2007 (2e): 200-201.
 func NormMuSinglePMFDPri(y, σ float64, μ []float64, μPri []float64) (post []float64) {
 	// y	single observation taken from Normal distribution
@@ -62,7 +62,7 @@ func NormMuPMFDPri(nObs int, ȳ, σ float64, μ []float64, μPri []float64) (pos
 	return
 }
 
-// Posterior mean for unknown Normal μ, with KNOWN σ. 
+// Posterior mean for unknown Normal μ, with KNOWN σ.
 // Bolstad 2007 (2e): 209, eq. 11.6
 func NormMuPostMean(nObs int, ȳ, σ, μPri, σPri float64) float64 {
 	// μPri		prior mean
@@ -76,7 +76,7 @@ func NormMuPostMean(nObs int, ȳ, σ, μPri, σPri float64) float64 {
 	return (μPost)
 }
 
-// Posterior standard deviation for unknown Normal μ, with KNOWN σ. 
+// Posterior standard deviation for unknown Normal μ, with KNOWN σ.
 // Bolstad 2007 (2e): 209, eq. 11.5
 func NormMuPostStd(nObs int, σ, μPri, σPri float64) float64 {
 	// μPri		prior mean

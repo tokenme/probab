@@ -1,13 +1,13 @@
-// Summary of the posterior distribution of the binomial parameter. 
+// Summary of the posterior distribution of the binomial parameter.
 package main
 
 import (
-	"code.google.com/p/probab/bayes"
 	"fmt"
+	"github.com/tokenme/probab/bayes"
 	"math"
 )
 
-// Summary of the posterior distribution of the binomial parameter. 
+// Summary of the posterior distribution of the binomial parameter.
 func main() {
 	var (
 		k, n int64

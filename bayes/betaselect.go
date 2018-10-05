@@ -6,11 +6,11 @@ package bayes
 // Ref.: Albert (2009)
 
 import (
-	dst "code.google.com/p/probab/dst"
+	dst "github.com/tokenme/probab/dst"
 )
 
-// betaprior1 returns the prior mean m given a beta(k*m, K*(1-m)) prior 	
-// where the pth quantile is given by x. 
+// betaprior1 returns the prior mean m given a beta(k*m, K*(1-m)) prior
+// where the pth quantile is given by x.
 func betaprior1(k, x, p float64) float64 {
 	var m0, p0 float64
 	mLo := 0.0

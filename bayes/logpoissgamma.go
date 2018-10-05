@@ -6,14 +6,14 @@ package bayes
 // Ref.: Albert (2009)
 
 import (
-	"code.google.com/p/probab/dst"
+	"github.com/tokenme/probab/dst"
 )
 
 // LogPoissGamma returns the logarithm of the posterior density of a Poisson log mean with a gamma prior.
 func LogPoissGamma(theta, y []float64, sh, rt float64) []float64 {
 	// Arguments:
 	// theta - vector of values of the log mean parameter
-	// y - vector of observations, and 
+	// y - vector of observations, and
 	// sh, rt  -  shape and rate=1/scale parameters of the gamma prior
 
 	// Returns:

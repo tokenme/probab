@@ -1,8 +1,8 @@
 package stat
 
 import (
-	"code.google.com/p/probab/dst"
 	"fmt"
+	"github.com/tokenme/probab/dst"
 	"testing"
 )
 

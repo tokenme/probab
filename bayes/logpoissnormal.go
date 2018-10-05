@@ -6,14 +6,14 @@ package bayes
 // Ref.: Albert (2009)
 
 import (
-	"code.google.com/p/probab/dst"
+	"github.com/tokenme/probab/dst"
 )
 
 // LogPoissNormal returns the logarithm of the posterior density of a Poisson log mean with a normal prior.
 func LogPoissNormal(theta, y []float64, mean, sd float64) []float64 {
 	// Arguments:
 	// theta - vector of values of the log mean parameter
-	// y - vector of observations, and 
+	// y - vector of observations, and
 	//  mean, sd  -  parameters  of the normal prior
 	// Returns:
 	// logPosterior - vector of values of the log posterior for all values in theta
